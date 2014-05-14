@@ -3,10 +3,22 @@ angular-db
 
 Simple IndexedDB access for AngularJS. Works great with [IndexedDBShim](https://github.com/axemclion/IndexedDBShim)!
 
+This is basically an incomplete wrapper around [db.js](https://github.com/aaronpowell/db.js/). Which is listed as a dependency in bower and must be included in the page.
 
 ### Example Usage:
 
-**1. Set up the DB:**
+**1. Install and include the library:**
+
+```shell
+bower install angular-db
+```
+
+```html
+<script src="bower_components/db.js/src/db.js"></script>
+<script src="bower_components/angular-db/db.js"></script>
+```
+
+**2. Set up the DB:**
 
 ```js
 angular.module('mymodule', ['db'])
@@ -19,7 +31,7 @@ angular.module('mymodule', ['db'])
 })
 ```
 
-**2. Use the DB:**
+**3. Use the DB:**
 
 ```js
 angular.module('mymodule.submodule', ['db'])
