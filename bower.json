@@ -1,6 +1,8 @@
 {
   "name": "angular-db",
   "version": "0.0.1",
-  "dependencies": [
-  ]
+  "main": "db.js",
+  "dependencies": {
+    "db.js": "~0.9.0"
+  }
 }
