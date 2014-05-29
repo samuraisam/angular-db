@@ -107,7 +107,7 @@ angular.module('formyula.db', [])
         var storeName = this.storeName;
 
         this.internalObjectStore().then(function(server) {
-          var prom = server.remove(key);
+          var prom = server[storeName].remove(key);
           prom.done(function(key) {
             $rootScope.$apply(function() {
               d.resolve(key);
