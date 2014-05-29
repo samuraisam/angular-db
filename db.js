@@ -1,4 +1,4 @@
-angular.module('formyula.db', [])
+angular.module('angular.db', [])
 
 .provider('$db', function() {
   var module = this;
