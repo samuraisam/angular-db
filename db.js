@@ -1,4 +1,4 @@
-angular.module('angular.db', [])
+angular.module('db', [])
 
 .provider('$db', function() {
   var module = this;
